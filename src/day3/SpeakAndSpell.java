@@ -15,15 +15,43 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+		speak("Mandlebrot");
 		// 2. Catch the user's answer in a String
-
+		String mand = JOptionPane.showInputDialog("Spell it.");
 		// 3. If the user spelled the word correctly, speak "correct"
-
+		if (mand.equalsIgnoreCase("mandelbrot")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			
+		}
 		// 4. Otherwise say "wrong"
-
+		else {
+			JOptionPane.showMessageDialog(null, "Wrong, it's mandlebrot");
+		}
 		// 5. repeat the process for other words
-		
+		speak("Extradite");
+		// 2. Catch the user's answer in a String
+		String ext = JOptionPane.showInputDialog("Spell it.");
+		// 3. If the user spelled the word correctly, speak "correct"
+		if (ext.equalsIgnoreCase("extradite")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			
+		}
+		// 4. Otherwise say "wrong"
+		else {
+			JOptionPane.showMessageDialog(null, "Wrong, it's extradite");
+		}
+		speak("Raspberry");
+		// 2. Catch the user's answer in a String
+		String hel = JOptionPane.showInputDialog("Spell it.");
+		// 3. If the user spelled the word correctly, speak "correct"
+		if (hel.equalsIgnoreCase("Raspberry")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			
+		}
+		// 4. Otherwise say "wrong"
+		else {
+			JOptionPane.showMessageDialog(null, "Wrong, it's Raspberry");
+		}
 	}
 
 	static void speak(String words) {
